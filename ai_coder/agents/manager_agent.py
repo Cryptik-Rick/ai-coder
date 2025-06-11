@@ -7,7 +7,10 @@ class ManagerAgent(AgentBase):
         while self.context.backlog:
             task = self.context.backlog.pop(0)
             print(
-                f"ManagerAgent: Assigning task '{task.description}' to {task.agent}"
+                f"ManagerAgent: Assigning task '{task.description}' to "
+                f"{task.agent}"
             )
+
+
             # In a real system, would dispatch to the correct agent
 
