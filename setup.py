@@ -1,13 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='AI_Coder',
+    name='ai_coder',
     version='0.1.0',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'ai-project=ai_project.cli:main',
+            'echo-app=ai_coder.cli:main',
         ],
     },
-    install_requires=[],
+    install_requires=[
+        'pytest',
+        'asyncio',
+    ],
 )

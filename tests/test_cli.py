@@ -1,13 +1,6 @@
 import subprocess
 import sys
-import pytest
-from ai_coder.cli import main
 
-def test_help_exit_code():
-    result = subprocess.run([sys.executable, '-m', 'ai_project.cli', '--help'])
-    assert result.returncode == 0
-
-def test_main_returns_none(capsys):
-    assert main() is None
-    captured = capsys.readouterr()
-    assert "Welcome to AI Project Maker!" in captured.out
+def test_echo():
+    result = subprocess.run([sys.executable, '-m', 'ai_coder.cli', 'hello'], capture_output=True, text=True)
+    assert 'hello' in result.stdout
