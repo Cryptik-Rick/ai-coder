@@ -1,0 +1,8 @@
+README.md
+setup.py
+AI_Coder.egg-info/PKG-INFO
+AI_Coder.egg-info/SOURCES.txt
+AI_Coder.egg-info/dependency_links.txt
+AI_Coder.egg-info/entry_points.txt
+AI_Coder.egg-info/top_level.txt
+tests/test_cli.py
