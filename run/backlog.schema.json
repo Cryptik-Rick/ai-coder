@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "id": "string",
+      "title": "string",
+      "description": "string",
+      "type": "feature" | "bug" | "chore",
+      "priority": "low" | "medium" | "high",
+      "estimate": number (story points),
+      "status": "open" | "in_progress" | "done"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+    "items": [
+      {
+        "id": "BL-001",
+        "title": "Project scaffold CLI",
+        "description": "Create a CLI command `ai-project init` that generates the directory structure and basic files (README, setup.py, .gitignore).",
+        "type": "feature",
+        "priority": "high",
+        "estimate": 3,
+        "status": "open"
+      },
+      {
+        "id": "BL-002",
+        "title": "Logging configuration",
+        "description": "Set up a basic logging framework (python `logging` module) with console output and a rotating file handler.",
+        "type": "feature",
+        "priority": "medium",
+        "estimate": 2,
+        "status": "open"
+      },
+      {
+        "id": "BL-003",
+        "title": "Basic test harness",
+        "description": "Configure pytest and add a sample test file to verify the CLI scaffold command.",
+        "type": "feature",
+        "priority": "medium",
+        "estimate": 2,
+        "status": "open"
+      }
+    ]
+  }
