@@ -19,14 +19,15 @@ jobs:
         with:
           python-version: '3.10'
 
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest coverage
+          pip install flake8 pytest coverage
 
-      # Lint step removed
+      - name: Lint with Flake8
+        run: |
+          flake8 ai_project tests
 
       - name: Run tests with coverage
         run: |
